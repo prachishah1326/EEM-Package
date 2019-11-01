@@ -1,7 +1,6 @@
 {
-  "name": "eem_package",
+  "name": "snow-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,15 @@
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "node-rest-client": "^3.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prachishah1326/ServiceNow-Api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prachishah1326/ServiceNow-Api/issues"
+  },
+  "homepage": "https://github.com/prachishah1326/ServiceNow-Api#readme",
+  "description": ""
 }

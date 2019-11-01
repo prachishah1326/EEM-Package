@@ -9,10 +9,10 @@ const Client = require('node-rest-client').Client;
 
 const client = new Client(optionsAuth);
 
-function dataList( management) {
-  const group = 'ELANCOMQ-TIER2-TCS';
-  const url = `https://lilly.service-now.com/api/now/table/${management}?sysparm_display_value=true&sysparm_query=sys_created_on>${dateparams}^assignment_group.name=${group}&sysparm_fields=number,state,assigned_to,impact,priority,severity,short_description,opened_at,closed_at,calendar_duration,time_worked,assignment_group,u_ci_class_filter,cmdb_ci`;
-
+function dataList( management,group) {
+  
+  var  url =  `${process.env.SNOW_URL}`;
+  url = url.replace('${management}',management).replace('${dateparams}',dateparams).replace('${group}',group)
   try{
 
     client.get(url, (data1) => {

@@ -70,7 +70,7 @@ function dataList( management,group) {
       return reqItems
     }
     else{
-     return {}
+     return items
     }
     });
   }catch(err){

@@ -1,4 +1,4 @@
-# Cirrus Authentication Module
+# Service Now Api Module
 
 ## Table of Contents
 * [Introduction](#introduction)
@@ -15,7 +15,7 @@ This module provides service now api data for last 12 months in JSON format  .
 ### Express.js
 ### moment
 ### node-rest-client
-```
+
 
 ## Installation
 `npm install snow-api`

@@ -10,7 +10,7 @@ function snowApi(table,group,parameters) {
   const defaultParmeters=["number","state","assigned_to","priority","severity","short_description","opened_at","closed_at","assignment_group","u_ci_class_filter","cmdb_ci"]
   const  snowUrl =  `${process.env.SNOW_URL}`;
   const parameters = (parameters.length !== 0?paarameters:defaultParmeters);
-  snowUrl = snowUrl.replace('${parameters}',parameters.join(",")).replace('${table}',table).replace('${dateparams}',dateparams).replace('${group}',group)
+  snowUrl = snowUrl.replace('{parameters}',parameters.join(",")).replace('{tablename}',table).replace('{dateparams}',dateparams).replace('{groupname}',group)
   try{
     client.get(snowUrl, (data) => {
       if(data.result != undefined){

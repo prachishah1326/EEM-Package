@@ -21,7 +21,7 @@ function snowApi(table,group,parameters) {
           for (let i = 0; i < items.length; i++) {
             var row = {};
             parameters.forEach(element =>{
-                row[element] = items[i][element]
+                row[element] = (items[i][element]?items[i][element]:null)
             })
             reqItems.push(row);
           }

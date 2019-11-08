@@ -2,19 +2,12 @@
 
 ## Table of Contents
 * [Introduction](#introduction)
-* [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Environment Variables](#required-environment-variables)
 * [Usage](#usage)
 
 ## Introduction
 This module provides service now api data for last 12 months in JSON format  .
-
-## Prerequisites
-
-### Express.js
-### moment
-### node-rest-client
 
 
 ## Installation

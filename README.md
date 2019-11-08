@@ -26,7 +26,7 @@ This module provides service now api data for last 12 months in JSON format  .
 Your url format should be like `https://URLNAME/api/now/table/{tablename}?sysparm_display_value=true&sysparm_query=sys_created_on>{dateparams}^assignment_group.name={groupname}&sysparm_fields={parameters}`  in which replace url name with specific url.
 
 For example:
-SNOW_URL = https://servicenow.com/api/now/table/{tablename}?sysparm_display_value=true&sysparm_query=sys_created_on>${dateparams}^assignment_group.name=${groupname}&sysparm_fields=${parameters}
+SNOW_URL = `https://servicenow.com/api/now/table/{tablename}?sysparm_display_value=true&sysparm_query=sys_created_on>${dateparams}^assignment_group.name=${groupname}&sysparm_fields=${parameters}`
 
 
 ## Usage
